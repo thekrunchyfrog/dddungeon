@@ -1,0 +1,9 @@
+{{ if .Title }}
+  <hgroup>
+    {{ $logo := resources.Get "images/logo3.png" }}
+    <h1><img src="{{ $logo.Permalink }}" alt="{{.Title}}"></h1>
+    {{ with .Params.Description }}
+      <p>{{ . | markdownify }}</p>
+    {{ end }}
+  </hgroup>
+{{ end }}
