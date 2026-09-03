@@ -5,32 +5,19 @@ enableRobotsTXT = true
 languageCode = "en"
 timeZone = "America/New_York"
 timeout = "120s"
-title = "Dom's Doll Gallery"
+title = "Dolls, diaromas... dolloramas?"
 
 [params]
   defaultTheme = "dark"
   description = "Dolls, diaromas... dolloramas?"
-  title = "My Gallery"
+  customCSS = ["css/custom.css"]
   [params.author]
     email = "dom@domsdolldungeon.com"
     name = "Dom Dahl"
-  [params.socialIcons]
-    website = "https://domsdolldungeon.com"
-    #mastodon = "https://example.com"
-    #pixelfed = "https://example.com"
-    #mixcloud = "https://example.com"
-    #flickr = "https://www.flickr.com"
-    #500px = "https://500px"
-    #whatsapp = "1234567890"
   [params.gallery]
     #boxSpacing = 10
     #targetRowHeight = 288
     #targetRowHeightTolerance = 0.25
-  [params.font]
-    enable = true
-    type = "online"
-    onlineUrl = "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Raleway:wght@300;400;500;600;700&display=swap"
-    fontFamily = "'Cormorant Garamond', 'Raleway', serif"
 
 [outputs]
   home = ["HTML", "RSS"]
@@ -50,12 +37,6 @@ title = "Dom's Doll Gallery"
     min = "0.121.2"
   [[module.imports]]
     path = "github.com/nicokaiser/hugo-theme-gallery/v4"
-
-[menu]
-  [[menu.footer]]
-    name = "GitHub"
-    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
-    weight = 3
 
 [services]
   [services.rss]

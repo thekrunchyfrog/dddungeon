@@ -1,7 +1,5 @@
 ---
-description: An example site for hugo-theme-gallery. Images from Unsplash.
-
-title: Hugo Gallery
+title: Dom's Doll Dungeon
 resources:
 menus:
   main:
